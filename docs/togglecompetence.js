@@ -1,6 +1,7 @@
 <script>
-    function togglecompetence () {
-        const compSection = document.getElementById('competences');
-        compSection.style.display = compSection.style.display === 'none' ? 'block' : 'none';
+    function toggleSection(id) {
+        const section = document.getElementById(id);
+        if (!section) return;
+        section.style.display = section.style.display === 'none' ? 'block' : 'none';
     }
 </script>
